@@ -1,4 +1,7 @@
-angular.module('addbook.controllers.main', [])
-    .controller('MainController', ['$scope', function($scope) {
-        console.log('ppoop');
-    }]);
+/**
+ * Top Level Controller
+ * @param {Object} jsonReader - gets the contact data from the json file
+ */
+function MainController(jsonReader, baseURL) {
+    jsonReader.getJsonData(baseURL + '/assets/contacts.json');
+}
