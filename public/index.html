@@ -1,23 +1,28 @@
 <!doctype html>
+<html ng-app="addbook">
 
-<html>
 <head>
-	<!-- META -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title></title>
-
-	<!-- CSS -->
-
-
-	<!-- SCRIPTS -->
-
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesome Address Book</title>
+    <!-- CSS -->
+    <!-- SCRIPTS -->
+    <script src="angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-route.js"></script>
+    <script src="app-module.js"></script>
+    <script src="app-routes.js"></script>
+    <!-- CONTROLLERS -->
+    <script src="components/main/main-controller.js"></script>
 </head>
 
 <body>
-
-<!-- CONTENT -->
-
+    OOOoo!
+    <!-- CONTENT -->
+    <!-- this is where content will be injected -->
+    <div ng-view>
+    </div>
 </body>
+
 </html>
