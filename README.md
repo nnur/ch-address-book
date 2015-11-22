@@ -1,3 +1,8 @@
+# Address Book
+
+This is a simple Angular address book made as part of a take-home coding challenge from Edvisor.
+Find the original instructions below.
+
 # Instructions
 
 1. Build an address book using the attached wireframe. All contacts should be
@@ -30,3 +35,9 @@ NOTE: use the contacts.json file in the public folder to populate the Address Bo
 2. Run npm install to install the dependencies.
 3. Start the server: `node server.js`
 4. View in browser at `http://localhost:8080`
+
+## Testing
+
+1. npm install
+2. karma start
+3. View in browser at `http://localhost:9876/`
