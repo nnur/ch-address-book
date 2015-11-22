@@ -1,0 +1,67 @@
+.ab-contact-form {
+	padding-left: $padding;
+	display: flex;
+	flex-direction: column;
+
+	&.editable {
+		input { 
+			@extend %input-original-style;
+		}
+	}
+
+	input {
+		font-family: $font;
+		font-size:$font-medium;
+		background: none;
+		border: none;
+		padding-top: $padding;
+		padding-bottom: $padding;
+		
+		&:focus{
+			box-shadow: none;
+			outline: none;
+		    outline-style: none;
+		}
+	}
+
+	.ab-contact-form-row {
+		display: flex;
+		flex-direction: row;
+
+		p {
+			font-family: $font; 
+		}
+		input {
+			margin-left: auto;
+			width: 80%;
+		}
+	}
+	
+}
+
+
+.ab-button {
+	margin-top: $form-margin;
+	margin-right:$form-margin;
+	margin-left:auto;
+	padding: 10px;
+	border:none;
+	border-radius: 10px;
+	background: $dark-grey;
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	    outline-style: none;
+	}
+}
+
+.ab-contact-name {
+	margin-right:auto;
+	input {
+		width:25%;
+		border:1px black;
+		font-size: $font-large !important;
+		font-weight: bold;
+	}
+}
+

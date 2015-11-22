@@ -9,6 +9,7 @@
 
 .ab-list {
  	@extend %list-padding;
+  padding-left: 5px;
     margin: auto;
     width: $list-width;
     font-family: $font;

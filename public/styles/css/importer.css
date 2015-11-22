@@ -1,7 +1,33 @@
+.ab-contact-form.editable input {
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
 .ab-left-bar {
-  margin: 90px;
+  margin-left: 90px;
   background-color: #CCCCCC;
   width: 300px; }
+  .ab-left-bar h3 {
+    font-family: "Quicksand", sans-serif; }
+
+.ab-right-panel {
+  margin-right: 90px;
+  background-color: #EEEEEE;
+  width: 300px;
+  flex-grow: 1; }
+
+.ab-container {
+  display: flex; }
 
 .ab-listpane {
   width: 300px;
@@ -11,6 +37,7 @@
   padding-top: 50px; }
 
 .ab-list {
+  padding-left: 5px;
   margin: auto;
   width: 275px;
   font-family: "Quicksand", sans-serif;
@@ -44,3 +71,48 @@
     box-shadow: none;
     outline: none;
     outline-style: none; }
+
+.ab-contact-form {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column; }
+  .ab-contact-form input {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    background: none;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .ab-contact-form input:focus {
+      box-shadow: none;
+      outline: none;
+      outline-style: none; }
+  .ab-contact-form .ab-contact-form-row {
+    display: flex;
+    flex-direction: row; }
+    .ab-contact-form .ab-contact-form-row p {
+      font-family: "Quicksand", sans-serif; }
+    .ab-contact-form .ab-contact-form-row input {
+      margin-left: auto;
+      width: 80%; }
+
+.ab-button {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #BBBBBB; }
+  .ab-button:focus {
+    box-shadow: none;
+    outline: none;
+    outline-style: none; }
+
+.ab-contact-name {
+  margin-right: auto; }
+  .ab-contact-name input {
+    width: 25%;
+    border: 1px black;
+    font-size: 25px !important;
+    font-weight: bold; }

@@ -1,0 +1,18 @@
+%input-original-style {
+  
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    margin-top: $form-margin;
+    margin-bottom: $form-margin;
+    margin-right:$form-margin;
+
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+      border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}

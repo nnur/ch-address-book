@@ -21,7 +21,6 @@ function searchBar() {
 
     return {
         scope: {
-            searchQuery: '=ngModel',
             originalData: '=original',
             searchResults: '=results'
         },
@@ -30,8 +29,8 @@ function searchBar() {
 
             scope.$watch(function() {
                 return scope.searchQuery;
-            }, function(newVal) {
-                scope.searchResults = search(newVal, scope.originalData);
+            }, function(newQuery) {
+                scope.searchResults = search(newQuery, scope.originalData);
             });
         }
 

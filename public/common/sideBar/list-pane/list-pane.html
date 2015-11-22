@@ -3,7 +3,7 @@
     <div class="ab-contacts">
         <div ng-repeat="item in listItems">
             <!-- Each Contact -->
-            <div class="ab-list">
+            <div class="ab-list" ng-click="onclick(item)">
                 {{item.lastname}}, {{item.firstname}}
             </div>
         </div>

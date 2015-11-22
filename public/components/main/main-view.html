@@ -1,8 +1,20 @@
 <!-- MainController as mainCtrl -->
-<div class="ab-left-bar">
-    <center>
-        <x-search-bar ng-model="mainCtrl.searchQuery" original="mainCtrl.contactList" results="mainCtrl.displayedList"></x-search-bar>
-    </center>
-    <x-list-pane data="mainCtrl.displayedList"></x-list-pane>
+<div class="ab-container">
+    <div class="ab-left-bar">
+        <h3>
+	        <center>
+	        All Contacts
+	        </center>
+        </h3>
+        <!-- SEARCH BAR -->
+        <center>
+            <x-search-bar original="mainCtrl.contactList" results="mainCtrl.displayedList"></x-search-bar>
+        </center>
+        <!-- CONTACT LIST -->
+        <x-list-pane data="mainCtrl.displayedList" on-selected="mainCtrl.updateContactCard"></x-list-pane>
+    </div>
+    <!-- CONTACT CARD -->
+    <div class="ab-right-panel">
+        <x-contact-card contact-info="mainCtrl.selectedContact"></x-contact-card>
+    </div>
 </div>
-<x-contact-card></x-contact-card>

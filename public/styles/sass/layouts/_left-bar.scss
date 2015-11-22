@@ -1,5 +1,9 @@
 .ab-left-bar {
-	margin:$sidebar-margin;
-	background-color:$medium-grey;
+	margin-left: $page-margin;
+	background-color: $medium-grey;
 	width: $sidebar-width;
+	h3 {
+		font-family: $font;
+	}
 }
+

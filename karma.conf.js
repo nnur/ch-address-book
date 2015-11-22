@@ -18,10 +18,15 @@ module.exports = function(config) {
             // Angular stuff
             'node_modules/angular/angular.js',
             'node_modules/angular-mocks/angular-mocks.js',
-
+            //lodash
+            'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js',
             // src
             'public/common/json-reader/json-reader-service.js',
             'public/common/json-reader/json-reader.js',
+            'public/common/sidebar/search-bar/search-bar-directive.js',
+            'public/common/sidebar/list-pane/list-pane-directive.js',
+            'public/common/sidebar/sidebar.js',
+            'public/common/sidebar/search-bar/*.html',
 
             // tests
             'public/**/*_test.js'
@@ -34,8 +39,24 @@ module.exports = function(config) {
 
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-        preprocessors: {},
+        preprocessors: {
+            'public/common/sidebar/search-bar/*.html': ['ng-html2js']
+        },
 
+        ngHtml2JsPreprocessor: {
+            // If your build process changes the path to your templates,
+            // use stripPrefix and prependPrefix to adjust it.
+            stripPrefix: "public/",
+
+            // the name of the Angular module to create
+            moduleName: "addbook.templates"
+        },
+
+        plugins: [
+            'karma-chrome-launcher',
+            'karma-jasmine',
+            'karma-ng-html2js-preprocessor'
+        ],
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
@@ -72,5 +93,5 @@ module.exports = function(config) {
         // Concurrency level
         // how many browser should be started simultanous
         concurrency: Infinity
-    })
-}
+    });
+};
