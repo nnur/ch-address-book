@@ -1,3 +1,13 @@
-<div ng-repeat="item in listItems">
-    {{item.lastname}}, {{item.firstname}}
+<div class="ab-sidebar">
+    <!-- Search Bar -->
+    <x-search-bar></x-search-bar>
+    <!-- Contact List -->
+    <div class="ab-contacts">
+        <div ng-repeat="item in listItems">
+            <!-- Each Contact -->
+            <div class="ab-list">
+                {{item.lastname}}, {{item.firstname}}
+            </div>
+        </div>
+    </div>
 </div>

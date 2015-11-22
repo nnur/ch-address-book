@@ -1,0 +1,28 @@
+.ab-search{
+	padding-top: $padding;
+	font-family: $font;
+	font-weight: bold; 
+	font-size:$font-large;
+	text-align: center;
+
+}
+
+.ab-searchbar{
+	padding-top: $padding;
+}
+
+.ab-input{
+	border-radius: 20px;
+	border:none;
+	padding-left: 10px;
+	font-family: $font;
+	font-size:$font-medium;
+	width: $search-width;
+	height: 30px;
+// remove blue glow
+	&:focus{
+	box-shadow: none;
+	outline: none;
+    outline-style: none;
+	}
+}

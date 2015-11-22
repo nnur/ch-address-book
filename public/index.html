@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="addbook">
+<html data-ng-app="addbook">
 
 <head>
     <!-- META -->
@@ -8,6 +8,8 @@
     <title>Awesome Address Book</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles/css/importer.css">
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
     <!-- SCRIPTS -->
     <script src="angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
@@ -22,13 +24,17 @@
     <script src="common/json-reader/json-reader.js"></script>
     <!-- sidebar -->
     <script src="common/sidebar/list-pane/list-pane-directive.js"></script>
+    <script src="common/sidebar/search-bar/search-bar-directive.js"></script>
     <script src="common/sidebar/sidebar.js"></script>
+    <!-- contactCard -->
+    <script src="common/contact-card/contact-card-directive.js"></script>
+    <script src="common/contact-card/contact-card.js"></script>
 </head>
 
 <body>
     <!-- CONTENT -->
     <!-- this is where content will be injected -->
-    <div ng-view>
+    <div data-ng-view>
     </div>
 </body>
 

@@ -1,2 +1,45 @@
-h1 {
-  color: red; }
+.ab-sidebar {
+  background-color: #CCCCCC;
+  float: left;
+  margin-top: 90px;
+  margin-left: 90px;
+  width: 300px;
+  height: 550px; }
+
+.ab-contacts {
+  padding-top: 50px; }
+
+.ab-list {
+  margin: auto;
+  width: 275px;
+  font-family: "Quicksand", sans-serif;
+  border-top: 1px solid #BBBBBB; }
+  .ab-list:hover, .ab-list:focus {
+    background-color: #BBBBBB; }
+
+.ab-list {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.ab-search {
+  padding-top: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center; }
+
+.ab-searchbar {
+  padding-top: 15px; }
+
+.ab-input {
+  border-radius: 20px;
+  border: none;
+  padding-left: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  width: 250px;
+  height: 30px; }
+  .ab-input:focus {
+    box-shadow: none;
+    outline: none;
+    outline-style: none; }

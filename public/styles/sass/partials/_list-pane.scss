@@ -1,0 +1,29 @@
+.ab-sidebar{
+	background-color:$medium-grey;
+	float:left;
+	margin-top:$sidebar-margin;
+	margin-left:$sidebar-margin;
+	width:$sidebar-width;
+	height: $adbook-height;
+}
+
+.ab-contacts{
+	padding-top: 50px;
+
+}
+
+.ab-list{
+ 	@extend %list-padding;
+    margin:auto;
+    width: $list-width;
+    font-family: $font;
+   	border-top: 1px solid $dark-grey;
+   	&:hover, &:focus {
+      background-color: $dark-grey;
+    }
+}
+
+%list-padding {
+	padding-top: $padding;
+    padding-bottom: $padding;	
+}
