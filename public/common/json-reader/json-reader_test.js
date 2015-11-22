@@ -1,11 +1,13 @@
 describe('json reader', function() {
 
+    // Store a local reference to the service being tested
     var jsonReader;
 
     beforeEach(module('addbook.common.jsonReader'));
 
     beforeEach(function() {
         inject(function($injector) {
+            // Mock the backend handeling REST operations
             $httpBackend = $injector.get('$httpBackend');
             $httpBackend.when('GET', '/path').respond('testResponse');
         });

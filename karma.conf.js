@@ -21,6 +21,10 @@ module.exports = function(config) {
             //lodash
             'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js',
             // src
+            'app-module.js',
+            'app-routes.js',
+            'public/components/main/main-controller.js',
+            'public/components/main/main.js',
             'public/common/json-reader/json-reader-service.js',
             'public/common/json-reader/json-reader.js',
             'public/common/sidebar/search-bar/search-bar-directive.js',

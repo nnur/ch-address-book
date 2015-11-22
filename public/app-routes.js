@@ -4,5 +4,5 @@ app.config(function($routeProvider) {
             templateUrl: 'components/main/main-view.html',
             controller: 'MainController',
             controllerAs: 'mainCtrl'
-        });
+        }).otherwise('/');
 });

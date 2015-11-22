@@ -1,17 +1,22 @@
 <form novalidate class="ab-contact-form" ng-class="{'editable' : editMode=='save'}">
+    <!-- edit/save button -->
     <button ng-click="toggleEditMode()" class="ab-button">{{editMode}}</button>
+    <!-- Contact Name -->
     <div class="ab-contact-name">
         <input type="text" ng-model="contact.firstname" ng-disabled="editMode == 'edit'" />
         <input type="text" ng-model="contact.lastname" ng-disabled="editMode == 'edit'" />
     </div>
+    <!-- Contact Phone -->
     <div class="ab-contact-form-row">
         <p> Phone: </p>
         <input type="text" ng-model="contact.phone" ng-disabled="editMode == 'edit'" />
     </div>
+    <!-- Contact Email -->
     <div class="ab-contact-form-row">
         <p> Email: </p>
         <input type="email" ng-model="contact.email" ng-disabled="editMode == 'edit'" />
     </div>
+    <!-- Contact Address -->
     <div class="ab-contact-form-row">
         <p> Address: </p>
         <input type="text" ng-model="contact.address" ng-disabled="editMode == 'edit'" />

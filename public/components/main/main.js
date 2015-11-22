@@ -1,5 +1,5 @@
-// Top level module
+/** Declares the 'jsonReader' module */
 angular.module('addbook.components.main', ['addbook.common.jsonReader'])
-    .controller('MainController', ['$scope', 'jsonReader', 'baseURL',
+    .controller('MainController', ['jsonReader', 'baseURL',
         MainController
     ]);
