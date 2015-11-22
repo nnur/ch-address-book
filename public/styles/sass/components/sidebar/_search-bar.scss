@@ -19,10 +19,10 @@
 	font-size:$font-medium;
 	width: $search-width;
 	height: 30px;
-// remove blue glow
+	// remove blue glow
 	&:focus{
-	box-shadow: none;
-	outline: none;
-    outline-style: none;
+		box-shadow: none;
+		outline: none;
+	    outline-style: none;
 	}
 }

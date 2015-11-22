@@ -1,3 +1,8 @@
 <!-- MainController as mainCtrl -->
-<x-list-pane data="mainCtrl.contactList"></x-list-pane>
+<div class="ab-left-bar">
+    <center>
+        <x-search-bar ng-model="mainCtrl.searchQuery" original="mainCtrl.contactList" results="mainCtrl.displayedList"></x-search-bar>
+    </center>
+    <x-list-pane data="mainCtrl.displayedList"></x-list-pane>
+</div>
 <x-contact-card></x-contact-card>

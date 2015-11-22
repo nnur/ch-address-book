@@ -1,20 +1,15 @@
-.ab-sidebar{
-	background-color:$medium-grey;
-	float:left;
-	margin-top:$sidebar-margin;
-	margin-left:$sidebar-margin;
-	width:$sidebar-width;
+.ab-listpane {
+	width: $sidebar-width;
 	height: $adbook-height;
 }
 
-.ab-contacts{
+.ab-contacts {
 	padding-top: 50px;
-
 }
 
-.ab-list{
+.ab-list {
  	@extend %list-padding;
-    margin:auto;
+    margin: auto;
     width: $list-width;
     font-family: $font;
    	border-top: 1px solid $dark-grey;
