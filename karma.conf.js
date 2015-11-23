@@ -51,6 +51,7 @@ module.exports = function(config) {
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
             'public/common/sidebar/search-bar/*.html': ['ng-html2js'],
+            'public/common/sidebar/list-pane/*.html': ['ng-html2js'],
             'public/common/contact-card/*.html': ['ng-html2js']
         },
 
