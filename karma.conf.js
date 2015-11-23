@@ -30,6 +30,12 @@ module.exports = function(config) {
             'public/common/sidebar/search-bar/search-bar-directive.js',
             'public/common/sidebar/list-pane/list-pane-directive.js',
             'public/common/sidebar/sidebar.js',
+            'public/common/contact-card/contact-card-directive.js',
+            'public/common/contact-card/contact-card.js',
+
+            //templates
+            'public/common/contact-card/*.html',
+            'public/common/sidebar/list-pane/*.html',
             'public/common/sidebar/search-bar/*.html',
 
             // tests
@@ -44,7 +50,8 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'public/common/sidebar/search-bar/*.html': ['ng-html2js']
+            'public/common/sidebar/search-bar/*.html': ['ng-html2js'],
+            'public/common/contact-card/*.html': ['ng-html2js']
         },
 
         ngHtml2JsPreprocessor: {
