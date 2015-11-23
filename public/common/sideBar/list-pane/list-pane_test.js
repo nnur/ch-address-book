@@ -15,7 +15,7 @@ describe('list pane directive', function() {
         scope.$digest();
     }
 
-    it('should toggle editMode', function() {
+    it('should call the onclick handler', function() {
         var mockItem = "mockItem";
 
         scope.mockSelected = jasmine.createSpy('mockSelected');
